@@ -5,6 +5,7 @@
   "author": "Elise Walker <elwalker@bstonetech.com>",
   "description": "Muahahahaha",
   "dependencies": {
+    "coffee-script": "^1.12.7",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.2",
     "hubot-google-images": "^0.2.7",
