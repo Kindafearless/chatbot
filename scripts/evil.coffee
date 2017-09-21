@@ -35,8 +35,11 @@ module.exports = (robot) ->
         data = JSON.parse(body)
         msg.send "#{data.data.fixed_height_downsampled_url}"
 
-  robot.hear /@(\w+) ([\w.-]*):? Hi, (.*)/i, (msg) ->
-    sender   = msg.message.user.name.toLowerCase()
-    
-    if sender == "hopper"
-      msg.send "/kick hopper"
+  robot.hear /i hate hopper/i, (msg) ->
+    msg.send "/kick hopper"
+
+  #robot.hear /@(\w+) ([\w.-]*):? Hi, (.*)/i, (msg) ->
+  #  sender   = msg.message.user.name.toLowerCase()
+  #  
+  #  if sender == "hopper"
+  #    msg.send "/kick hopper"
