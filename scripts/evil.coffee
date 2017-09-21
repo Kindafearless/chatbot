@@ -38,6 +38,5 @@ module.exports = (robot) ->
   robot.hear /@(\w+) ([\w.-]*):?: Hi, (.*)/i, (msg) ->
     sender   = msg.message.user.name.toLowerCase()
     
-    if (sender == "hopper"){
+    if sender == "hopper"
       msg.send "/kick hopper"
-    }
